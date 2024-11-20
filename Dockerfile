@@ -9,6 +9,10 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 # Use an official OpenJDK image as the base image
 FROM openjdk:11-jre-slim
+# Update package list and install curl
+RUN apt-get update && apt-get install -y curl
+# Clean up apt cache to reduce image size
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 # Set the working directory in the container
 WORKDIR /app
 # Copy the built JAR file from the previous stage to the container
