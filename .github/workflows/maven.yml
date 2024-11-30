@@ -27,3 +27,5 @@ jobs:
       run: |
         docker build -t ${{ secrets.DOCKER_USERNAME }}/products-service:latest .
         docker push ${{ secrets.DOCKER_USERNAME }}/products-service:latest
+
+        
