@@ -12,9 +12,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{API_GATEWAY_IP}}/products",
+					"raw": "{{baseUrl}}/products",
 					"host": [
-						"{{API_GATEWAY_IP}}"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"products"
@@ -53,9 +53,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{API_GATEWAY_IP}}/products/123",
+					"raw": "{{baseUrl}}/products/123",
 					"host": [
-						"{{API_GATEWAY_IP}}"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"products",
