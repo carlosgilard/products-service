@@ -88,7 +88,7 @@
 							"",
 							"pm.test('Stock is a non-negative integer', function () {",
 							"  const responseData = pm.response.json();",
-							"  pm.expect(responseData).to.be.an('number');",
+							"  pm.expect(responseData.stock).to.be.an('number');",
 							"  pm.expect(responseData.stock).to.be.at.least(0, 'Stock should be a non-negative integer');",
 							"});",
 							"pm.test('Id is a non-empty string', function () {",
